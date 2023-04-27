@@ -2,7 +2,7 @@ import sqlite3
 
 class Database:
     def __init__(self):
-        self.con = sqlite3.connect('todo-application-kivymd/todo.db')
+        self.con = sqlite3.connect('todo.db')
         self.cursor = self.con.cursor()
         self.create_task_table()
 
